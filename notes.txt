@@ -4,5 +4,10 @@ By: Martin Rinehart
 ===
 Application use node js
 ===
-
+START BY:
+>git clone https://github.com/cmcr/lab-jsop.git
+/lab-jsop> npm install
+/lab-jsop> node server.js
+- navigate to http://localhost:3000
+- F12 to see the console output
 ===
