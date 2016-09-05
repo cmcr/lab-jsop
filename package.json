@@ -1,0 +1,22 @@
+{
+  "name": "lab-jsop",
+  "version": "1.0.0",
+  "description": "Test javascript object programing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmcr/lab-jsop.git"
+  },
+  "keywords": [
+    "jsop"
+  ],
+  "author": "cmcr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmcr/lab-jsop/issues"
+  },
+  "homepage": "https://github.com/cmcr/lab-jsop#readme"
+}
