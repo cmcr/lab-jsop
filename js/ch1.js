@@ -1,7 +1,7 @@
 //Chapter 1. Creating Objects
-console.log("Chapter 1. Creating Objects");
+console.log("%c Chapter 1. Creating Objects", "font-weight: bold");
 //§ Creating ex nihilo objects
-console.log("§ Creating ex nihilo objects");
+console.log("%c § Creating ex nihilo objects", "font-weight: bold");
 obj = new Object();
 obj.nombre = "Pancho";
 obj.saluda = function(){return "Que tal, que vola!";}
@@ -10,8 +10,8 @@ console.log(obj.nombre+" "+obj.saluda());
 obj1 = new Object()
 obj1 = obj //now they refer to the same object
 obj1.nombre = "Francisco"
-console.log(obj.nombre) //output Francisco
-console.log(obj1.nombre) //output Francisco
+console.log("obj: "+obj.nombre) //output Francisco
+console.log("obj1: "+obj1.nombre) //output Francisco
 //
 obj2 = {}
 obj3 ={color: 'blue',
@@ -22,9 +22,9 @@ console.log("obj3 "+obj3);
 my_object = {
     size: 'large',
     color: 'blue',
-    toString: function(){return this.size;}
+    toString: function(){return this.color +", "+ this.size;}
 };
-console.log("my_object " + my_object);
+console.log("my_object is: " + my_object);
 //
 obj4 = obj3;
 console.log("obj4"+obj4.color);
@@ -36,7 +36,7 @@ console.log(args);
 skrivare(animales);
 
 //§ OOP-Style Object Creation
-console.log("§ OOP-Style Object Creation");
+console.log("%c § OOP-Style Object Creation", "font-weight: bold");
 
 function Dog(name, breed) {
     var new_dog = this; // the new object
@@ -83,7 +83,8 @@ var mutt = new Cat( 'Mutt');
 console.log("cat "+mutt.breed); // mixed breed
 
 //§ Prototypal Object Creation
-console.log(§ Prototypal Object Creation);
+console.log("%c § Prototypal Object Creation", "font-weight: bold");
+
 function Singer() {}; // no properties
 var patty   = new Singer(),
     maxene  = new Singer(),
@@ -114,7 +115,7 @@ var snoopy = Object.create(lassie);
 snoopy.speak(); // Woof! Woof!
 console.log("snoopy is: "+snoopy.name)
 var clone = function(proto_obj) {
-    var ret = {}; // �empty� object
+    var ret = {}; // empty object
 
     for ( var prop in proto_obj ) {
         ret[prop] = proto_obj[prop]; }
@@ -131,4 +132,3 @@ var copia = function (){return "copy"}
 copia.color = "negro"
 console.log(copia.color)
 //
-document.write("<input type='text' />")
