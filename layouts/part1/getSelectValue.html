@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Select Value</title>
+<style>
+    .container
+{
+white-space: nowrap;
+float: left;
+display: inline-block;
+width: 100%;
+height: 55 px;
+overflow-x: hidden;
+overflow-y: hidden;
+background-color: #DDDDDD;
+}
+.slide
+{
+display: inline; /*Display inline and maintain block characteristics.*/
+//vertical-align: top; /*Makes sure all the divs are correctly aligned.*/
+//width: 100px;
+//height: 20px;
+//background-color: #FFFFCC;
+//margin: 5px;
+//float: left;
+}
+</style>
+    <script language="JavaScript">
+        function deleteElement(ele){
+        console.log(ele.value);
+        document.getElementById("s"+ele.value).style.display = 'none';
+        }
+        function printSelect(){
+     var x = document.getElementById('se');
+     var txt = "";
+     var val = "";
+     for (var i = 0; i < x.length; i++) {
+         txt +=x[i].text + ",";
+         val +=x[i].value + ",";
+      }
+      console.log(txt+val);
+          }
+    </script>
+</head>
+<body>
+<div class="container" >
+    <div class="slide">
+        <select id="se" onchange="deleteElement(this);">
+            <option value="1">uno</option>
+            <option value="2">dos</option>
+            <option value="3">tres</option>
+            <option value="4">cuatro</option>
+        </select>
+    </div>
+    <div id="s1" class="slide">something1</div>
+    <div id="s2" class="slide">something2</div>
+    <div id="s3" class="slide">something3</div>
+    <div id="s4" class="slide">something4</div>
+</div>
+<div><input type="button" onclick="printSelect()" value="Print Select" /></div>
+</body>
+</html>

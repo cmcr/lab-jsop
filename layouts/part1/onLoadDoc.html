@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Onload Document Ready</title>
+</head>
+<body onload="draw('1');">
+<div id="container">
+<p>Laddar...</p>
+</div>
+<script language="JavaScript">
+
+function draw(fx){
+var c = document.getElementById("container");
+container.innerHTML = "";
+
+switch(fx) {
+    case "1":
+        var input1 = document.createElement("input");
+        input1.type = "text";
+        input1.className = "";
+        input1.value = "case 1";
+        container.appendChild(input1);
+        break;
+    case "2":
+        var input2 = document.createElement("input");
+        input2.type = "text";
+        input2.className = "";
+        input2.value = "case 2";
+        container.appendChild(input2);
+        break;
+    case("3"):
+        var input3 = document.createElement("input");
+        input3.type = "text";
+        input3.className = "";
+        input3.value = "case 3";
+        container.appendChild(input3);
+        break;
+    default:
+        //
+}
+}
+window.onload = function() {
+  draw("2");
+};
+/*
+window.onload = function() {
+  draw("3");
+}
+*/
+</script>
+</body>
+</html>

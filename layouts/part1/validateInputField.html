@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Input</title>
+    <script language="JavaScript">
+function empty() {
+    var x;
+    x = document.getElementById("inputText").value;
+    if (x == "") {
+    var tf = document.getElementById("inputText");
+    tf.style.border = '1px solid red';
+    tf.style.border['color']= 'red';
+        alert("Nada");
+        return false;
+    };
+}
+</script>
+</head>
+<body>
+<div class="container" >
+    <div class="slide">
+        <form class="slide" action="" method="get">
+            <input type="text" placeholder="Text" id="inputText" />
+            <input type="submit" value="Skicka" onClick="return empty()" />
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
