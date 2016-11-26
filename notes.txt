@@ -1,8 +1,9 @@
 Application for testing javascript object programing
 based on book JavaScript Object Programming
-By: Martin Rinehart
+By: Martin Rinehart.
+Application test different js functions folder: /layouts/lab
 ===
-Application use node js
+Application use node js and express js
 ===
 START BY:
 >git clone https://github.com/cmcr/lab-jsop.git
